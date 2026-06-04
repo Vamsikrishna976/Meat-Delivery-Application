@@ -46,7 +46,7 @@ const Header = () => {
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul className='list-inline ms-auto d-flex mb-0'>
+                            <ul className='list-inline ms-auto d-flex mb-0 nav-auth'>
                                 <li>
                                     <NavLink style={{color:'black'}} to="/login" className={({ isActive }) =>
                                         isActive ? "lactive-class" : "not-active-class"}>

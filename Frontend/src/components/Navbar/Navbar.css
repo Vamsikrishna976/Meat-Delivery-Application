@@ -72,6 +72,8 @@
   top: -8px;
   right: -8px;
 }
+
+
 /* Responsive for device */
 @media (max-width: 1050px) {
   .navbar .logo {
@@ -154,4 +156,37 @@
     padding: 5px 15px;
     font-size: 12px;
   }
+
+}
+
+.nav-auth {
+  gap: 12px;
+  align-items: center;
+}
+
+.login-link {
+  color: white !important;
+  text-decoration: none;
+  padding: 8px 18px;
+  border: 2px solid white;
+  border-radius: 25px;
+  font-weight: 600;
+}
+
+.login-link:hover {
+  background: white;
+  color: black !important;
+}
+
+.signup-link {
+  background: #ffc107;
+  color: black !important;
+  text-decoration: none;
+  padding: 8px 18px;
+  border-radius: 25px;
+  font-weight: 600;
+}
+
+.signup-link:hover {
+  background: #ffca2c;
 }
