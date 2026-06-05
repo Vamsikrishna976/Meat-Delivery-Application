@@ -83,14 +83,14 @@ export const connectToMongoDB = async () => {
     maxPoolSize: 10,
     useUnifiedTopology: true,
   };
-  const baseMongoURI = process.env.MONGO_URI;
+  // const baseMongoURI = process.env.MONGO_URI;
 
-  const mongoURI = `${baseMongoURI}/${process.env.DB_NAME}`;
+  // const mongoURI = `${baseMongoURI}/${process.env.DB_NAME}`;
 
   try {
-    await mongoose.connect(mongoURI, options);
+    await mongoose.connect(process.env.MONGO_URI, options);
     console.log("MongoDB Connected.");
-    console.log(mongoURI);
+    // console.log(mongoURI);
   } catch (error) {
     console.error("MongoDB Connection error:", error.message);
     process.exit(1);
