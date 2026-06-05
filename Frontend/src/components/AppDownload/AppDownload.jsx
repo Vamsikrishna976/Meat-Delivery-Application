@@ -5,7 +5,7 @@ import { assets } from '../../assets/assets'
 const AppDownload = () => {
   return (
     <div className='app-download' id='app-download'>
-      <p>For better experience, download <br /> the Janosa app now</p>
+      <p>For Better Experience, Download <br /> The Janosa app now</p>
       <div className="app-download-platform">
         <img src={assets.play_store} alt="" />
         <img src={assets.app_store} alt="" />
