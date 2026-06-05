@@ -50,7 +50,7 @@ export const startServer = async () => {
     app.use("/", routes);
    
     
-    const port = process.env.PORT;
+    const port = process.env.PORT || 8080;
     const server = app.listen(port, () => {
       const networkInterfaces = os.networkInterfaces();
       const ipAddress = Object.values(networkInterfaces)
