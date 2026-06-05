@@ -10,7 +10,7 @@ export const getHeaders = () => {
         headers: {
             Authorization: `Bearer ${token}`,
             'Content-Type': 'application/json',
-            'Access-Control-Allow-Origin': '*' // Ensure this matches the backend's CORS configuration
+            // 'Access-Control-Allow-Origin': '*' // Ensure this matches the backend's CORS configuration
         }
     }
 }
